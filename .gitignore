@@ -1,0 +1,9 @@
+traceai/backend/backend.err
+traceai/.env
+traceai/**/.env
+traceai/**/node_modules/
+traceai/**/__pycache__/
+traceai/**/.venv/
+traceai/**/*.db
+traceai/**/*.sqlite
+traceai/**/*.sqlite3
