@@ -60,28 +60,64 @@ Generates timeline/map + public appeal + police case-file draft
 
 | Category | Technologies |
 |---|---|
-| **Languages** | [e.g., Python, TypeScript] |
-| **Frameworks** | [e.g., FastAPI, React] |
-| **IBM Technologies** | [e.g., watsonx.ai, IBM Bob, IBM Cloud] |
-| **Databases** | [e.g., PostgreSQL, Redis] |
-| **Other** | [e.g., Docker, GitHub Actions] |
+| **Languages** | Python, TypeScript, JavaScript, CSS, HTML |
+| **Frameworks** | FastAPI, React, Vite, Tailwind CSS |
+| **IBM Technologies** | IBM Bob |
+| **Databases** | SQLite, SQLAlchemy |
+| **Other** | Git, GitHub, REST API, Recharts, Leaflet/OpenStreetMap, React Router |
 
 ---
 
 ## 📁 Repository Structure
 
 ```
-├── src/                  # All source code
-├── docs/                 # Written documentation
-│   ├── problem-statement.md
-│   ├── solution-overview.md
-│   ├── architecture.md
-│   └── setup-guide.md
-├── demo/                 # Demo artifacts
-│   ├── screenshots/      # App screenshots
-│   └── demo-video-link.txt  # Link to demo video
-├── presentation/         # Slide deck
-└── submission.yaml       # Structured submission metadata
+bob-ai-hackathon-paneer-chilli/
+│
+├── traceai/
+│   ├── backend/
+│   │   ├── app/
+│   │   │   ├── api/
+│   │   │   │   ├── auth.py
+│   │   │   │   ├── cases.py
+│   │   │   │   └── leads.py
+│   │   │   ├── database/
+│   │   │   │   ├── seed.py
+│   │   │   │   └── session.py
+│   │   │   ├── models/
+│   │   │   │   └── models.py
+│   │   │   ├── schemas/
+│   │   │   │   └── schemas.py
+│   │   │   ├── services/
+│   │   │   │   └── ai_service.py
+│   │   │   └── main.py
+│   │   ├── requirements.txt
+│   │   └── run.py
+│   │
+│   ├── frontend/
+│   │   ├── src/
+│   │   │   ├── components/
+│   │   │   ├── data/
+│   │   │   ├── hooks/
+│   │   │   ├── layouts/
+│   │   │   ├── pages/
+│   │   │   ├── services/
+│   │   │   └── types/
+│   │   ├── package.json
+│   │   └── vite.config.ts
+│   │
+│   ├── README.md
+│   ├── .env.example
+│   ├── start.bat
+│   └── start.ps1
+│
+├── src/
+├── docs/
+├── demo/
+├── presentation/
+├── .github/
+├── submission.yaml
+├── README.md
+└── CONTRIBUTING.md
 ```
 
 ---
@@ -91,19 +127,24 @@ Generates timeline/map + public appeal + police case-file draft
 > **Copy these exact steps from your [`docs/setup-guide.md`](docs/setup-guide.md)**
 
 ```bash
-# 1. Clone the repo
-git clone https://github.com/[your-repo].git
-cd [your-repo]
+# Clone
+git clone https://github.com/YOUR_USERNAME/traceai.git
+cd traceai
 
-# 2. Install dependencies
-[your install command here]
+# Install backend dependencies
+cd backend
+pip install -r requirements.txt
 
-# 3. Configure environment
-cp .env.example .env
-# Edit .env with your values
+# Copy env file
+copy env.example .env
 
-# 4. Run the project
-[your run command here]
+# Install frontend dependencies
+cd ..\frontend
+npm install
+
+# Go back to root and start everything
+cd ..
+.\start.bat
 ```
 
 ---
@@ -112,8 +153,6 @@ cp .env.example .env
 
 | Artifact | Link |
 |---|---|
-| 📹 Demo Video | [See demo/demo-video-link.txt](demo/demo-video-link.txt) |
-| 🌐 Live Demo | [See demo/live-demo-url.txt](demo/live-demo-url.txt) |
 | 🖼️ Screenshots | [See demo/screenshots/](demo/screenshots/) |
 | 📊 Presentation | [See presentation/slides.pdf](presentation/) |
 
@@ -121,16 +160,15 @@ cp .env.example .env
 
 ## ⚠️ Known Limitations
 
-> Be honest — judges appreciate transparency over overclaiming.
-
-- [Limitation 1: e.g., "Authentication is mocked — not production-ready"]
-- [Limitation 2: e.g., "Only tested on Chrome"]
-- [Limitation 3: e.g., "Feature X is scaffolded but not fully implemented"]
+- Mock data: Uses simulated family, investigator, and CCTV data.
+- No real-time integration: No direct access to police, CCTV, or government databases.
+- AI verification: AI-generated leads require human/investigator verification.
+- Prototype scalability: Security, infrastructure, and database scalability need further development for real-world deployment.
 
 ---
 
 ## 🏅 What We're Most Proud Of
 
-[Tell the judges what part of your submission is strongest and worth paying close attention to.]
+We are proud of submitting the project 
 
 ---
