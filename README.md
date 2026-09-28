@@ -1,6 +1,6 @@
-# 🚀 [Your Project Title Here]
+# 🚀 TRACE AI
 
-> ⚠️ **Replace everything in `[ ]` brackets with your actual content before submission.**
+
 
 ---
 
@@ -8,36 +8,51 @@
 
 | Field | Value |
 |---|---|
-| **Team Name** | [Your Team Name] |
-| **Track** | [AI / DevOps / Sustainability / Open] |
-| **Team Lead** | [Name] — [email@ibm.com] |
-| **Members** | [Name 1], [Name 2], [Name 3] |
+| **Team Name** | Paneer Chilli |
+| **Track** | AI / DevOps |
+| **Team Lead** | Bhavy Singh Chauhan — bhavy.chauhan04@gmail.com |
+| **Members** | Navleen kaur, Devesh Rawat, Mohit Jariwala |
 
 ---
 
 ## 🎯 Problem Statement
 
-> In 2–3 sentences: What problem does your project solve? Who experiences this problem?
+Missing Person Investigation Assistant
+Build a Bob-powered case coordination tool that takes family-provided data plus mock investigator tip logs and CCTV sighting descriptions. Bob correlates inputs, generates a prioritized list of investigative leads with recommended next actions, drafts a public appeal notice, and auto-fills a police missing person case file.
 
-[Describe the real-world problem your project addresses. Be specific about who the user is and what pain point they face.]
 
----
 
 ## 💡 Solution
 
-> In 2–3 sentences: What did you build? How does it solve the problem above?
+We built TRACEAI — an AI-powered Missing Person Investigation Assistant.
 
-[Describe your solution clearly. Explain the core mechanism — what makes it work.]
+The basic flow is:
+
+Family Information + Investigator Tips + CCTV Sightings
+↓
+AI correlates the information
+↓
+Identifies relationships between age, clothing, time and location
+↓
+Prioritizes investigative leads
+↓
+Explains why a lead received that priority
+↓
+Suggests next actions
+↓
+Generates timeline/map + public appeal + police case-file draft
 
 ---
 
 ## ✨ Key Features
 
-- **Feature 1:** [Brief description — e.g., "Real-time anomaly detection using watsonx.ai"]
-- **Feature 2:** [Brief description]
-- **Feature 3:** [Brief description]
-- **Feature 4:** [Optional]
-- **Feature 5:** [Optional]
+- Centralized Case Workspace – Keeps family information, investigator tips, and CCTV sightings in one place.
+- AI-Based Information Correlation – Connects data based on age, appearance/clothing, time, and location.
+- Prioritized Investigative Leads – Ranks leads by priority and provides a confidence score.
+- Timeline & Map Visualization – Displays sightings, tips, and leads chronologically and geographically.
+- Recommended Next Actions – Helps investigators decide what leads or information need further review.
+- Public Appeal Generator – Automatically creates a reviewable missing-person public notice from case information.
+- Investigator Dashboard – Provides an overview of active cases, high-priority leads, new sightings, and items requiring review.
 
 ---
 
