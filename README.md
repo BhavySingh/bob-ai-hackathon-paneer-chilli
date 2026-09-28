@@ -29,17 +29,17 @@ We built TRACEAI — an AI-powered Missing Person Investigation Assistant.
 The basic flow is:
 
 Family Information + Investigator Tips + CCTV Sightings
-↓
+-> 
 AI correlates the information
-↓
+-> 
 Identifies relationships between age, clothing, time and location
-↓
+-> 
 Prioritizes investigative leads
-↓
+-> 
 Explains why a lead received that priority
-↓
+-> 
 Suggests next actions
-↓
+-> 
 Generates timeline/map + public appeal + police case-file draft
 
 ---
