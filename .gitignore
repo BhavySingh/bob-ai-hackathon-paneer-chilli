@@ -1,9 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Build
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Python tools
+.pytest_cache/
+.mypy_cache/
+
+# SQLite database
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log
+*.err
+
+# TRACEAI runtime files
 traceai/backend/backend.err
-traceai/.env
-traceai/**/.env
-traceai/**/node_modules/
-traceai/**/__pycache__/
-traceai/**/.venv/
-traceai/**/*.db
-traceai/**/*.sqlite
-traceai/**/*.sqlite3
